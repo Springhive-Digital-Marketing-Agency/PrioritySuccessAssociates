@@ -88,10 +88,8 @@ document.addEventListener('DOMContentLoaded', function () {
             const target = document.querySelector(href);
             if (target) {
                 e.preventDefault();
-                const headerH = (header ? header.offsetHeight : 76);
-                const annoBar = document.getElementById('announcement-bar');
-                const annoH = (annoBar && !annoBar.classList.contains('hidden')) ? annoBar.offsetHeight : 0;
-                const offset = headerH + annoH + 20;
+                const headerH = header ? header.offsetHeight : 110;
+                const offset = headerH + 10;
                 const top = target.getBoundingClientRect().top + window.scrollY - offset;
                 window.scrollTo({ top: top, behavior: 'smooth' });
             }

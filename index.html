@@ -20,54 +20,62 @@
 </head>
 <body>
 
-    <div class="announcement-bar" id="announcement-bar">
-        <div class="container">
-            <p><i class="fi fi-rr-phone-call"></i> Ready to take the first step? Call us today: <a href="tel:7043221178">704-322-1178</a> &nbsp;|&nbsp; <a href="tel:9804512344">980-451-2344</a></p>
-        </div>
-        <button class="announcement-close" id="announcement-close" aria-label="Close announcement">&times;</button>
-    </div>
-
     <header class="site-header" id="site-header">
-        <nav class="navbar" role="navigation" aria-label="Main navigation">
-            <div class="container nav-container">
-                <a href="#" class="nav-logo" aria-label="Priority Success Associates Home">
-                    <div class="logo-mark">
-                        <div class="logo-icon">
-                            <i class="fi fi-rr-leaf"></i>
+        <div class="container header-container">
+            <!-- Dedicated Logo Container (Left) -->
+            <a href="#" class="header-logo-link" aria-label="Priority Success Associates Home">
+                <img src="images/Logo.png" alt="Priority Success Associates Logo" class="header-logo-img">
+            </a>
+
+            <!-- Header Content Right (Top Bar + Main Nav) -->
+            <div class="header-content-right">
+                <!-- Top Bar with Angled Ribbon in Dark Green #274D3B -->
+                <div class="top-bar" id="top-bar">
+                    <div class="top-bar-inner">
+                        <div class="top-bar-contact">
+                            <i class="fi fi-rr-phone-call"></i>
+                            <span>Ready to take the first step? Call us today:</span>
+                            <a href="tel:7043221178" class="top-phone">704-322-1178</a>
+                            <span class="top-sep">|</span>
+                            <a href="tel:9804512344" class="top-phone">980-451-2344</a>
                         </div>
-                        <div class="logo-text">
-                            <span class="logo-name">Priority Success</span>
-                            <span class="logo-sub">Associates</span>
+                        <div class="top-bar-hours">
+                            <i class="fi fi-rr-clock"></i>
+                            <span>Mon - Fri: 9:00 AM - 5:00 PM</span>
                         </div>
                     </div>
-                </a>
-                <ul class="nav-links" id="nav-links" role="list">
-                    <li><a href="#home" class="nav-link active">HOME</a></li>
-                    <li class="has-dropdown">
-                        <a href="#services" class="nav-link">SERVICES <i class="fi fi-rr-angle-small-down dropdown-arrow"></i></a>
-                        <ul class="dropdown-menu" role="list">
-                            <li><a href="#services"><i class="fi fi-rr-doctor"></i> Outpatient Therapy</a></li>
-                            <li><a href="#services"><i class="fi fi-rr-user"></i> Individual Therapy</a></li>
-                            <li><a href="#services"><i class="fi fi-rr-heart"></i> Couples Therapy</a></li>
-                            <li><a href="#services"><i class="fi fi-rr-users"></i> Family Therapy</a></li>
-                            <li><a href="#services"><i class="fi fi-rr-smile"></i> Youth &amp; Adolescent Therapy</a></li>
-                            <li><a href="#services"><i class="fi fi-rr-handshake"></i> Peer Support Services</a></li>
-                            <li><a href="#services"><i class="fi fi-rr-refresh"></i> Substance Use &amp; Recovery</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#about" class="nav-link">ABOUT</a></li>
-                    <li><a href="#vision" class="nav-link">OUR VISION</a></li>
-                    <li><a href="#testimonials" class="nav-link">TESTIMONIALS</a></li>
-                    <li><a href="#contact" class="nav-link">CONTACT</a></li>
-                </ul>
-                <div class="nav-actions">
-                    <a href="#contact" class="btn btn-gold-pill" id="nav-cta">Schedule Appointment</a>
-                    <button class="hamburger" id="hamburger" aria-label="Open mobile menu" aria-expanded="false">
-                        <span></span><span></span><span></span>
-                    </button>
                 </div>
+
+                <!-- Main Navigation Area (White Background) -->
+                <nav class="main-navbar" role="navigation" aria-label="Main navigation">
+                    <ul class="nav-links" id="nav-links" role="list">
+                        <li><a href="#home" class="nav-link active">HOME</a></li>
+                        <li class="has-dropdown">
+                            <a href="#services" class="nav-link">SERVICES <i class="fi fi-rr-angle-small-down dropdown-arrow"></i></a>
+                            <ul class="dropdown-menu" role="list">
+                                <li><a href="#services"><i class="fi fi-rr-doctor"></i> Outpatient Therapy</a></li>
+                                <li><a href="#services"><i class="fi fi-rr-user"></i> Individual Therapy</a></li>
+                                <li><a href="#services"><i class="fi fi-rr-heart"></i> Couples Therapy</a></li>
+                                <li><a href="#services"><i class="fi fi-rr-users"></i> Family Therapy</a></li>
+                                <li><a href="#services"><i class="fi fi-rr-smile"></i> Youth &amp; Adolescent Therapy</a></li>
+                                <li><a href="#services"><i class="fi fi-rr-handshake"></i> Peer Support Services</a></li>
+                                <li><a href="#services"><i class="fi fi-rr-refresh"></i> Substance Use &amp; Recovery</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#about" class="nav-link">ABOUT</a></li>
+                        <li><a href="#vision" class="nav-link">OUR VISION</a></li>
+                        <li><a href="#testimonials" class="nav-link">TESTIMONIALS</a></li>
+                        <li><a href="#contact" class="nav-link">CONTACT</a></li>
+                    </ul>
+                    <div class="nav-cta-wrap">
+                        <a href="#contact" class="btn btn-gold-pill" id="nav-cta">SCHEDULE APPOINTMENT</a>
+                        <button class="hamburger" id="hamburger" aria-label="Open mobile menu" aria-expanded="false">
+                            <span></span><span></span><span></span>
+                        </button>
+                    </div>
+                </nav>
             </div>
-        </nav>
+        </div>
     </header>
 
     <main>
@@ -82,13 +90,18 @@
 
             <div class="container hero-ref-container">
                 <div class="hero-left-column">
-                    <div class="anim-object anim-orb-glow" aria-hidden="true"></div>
-                    <div class="anim-object anim-ring-gold" aria-hidden="true"></div>
-                    <div class="anim-object anim-leaf-float" aria-hidden="true">
-                        <i class="fi fi-rr-leaf"></i>
+                    <!-- Logo-Inspired Brand Animated Motifs -->
+                    <div class="brand-anim-obj brand-motif-diamond" aria-hidden="true" style="top: 10%; left: -4%;">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><polygon points="24,2 46,24 24,46 2,24" fill="url(#gradGoldD1)" stroke="#C59419" stroke-width="1.5" opacity="0.85"/><polygon points="24,10 38,24 24,38 10,24" fill="none" stroke="#6B2D5C" stroke-width="1.5" opacity="0.9"/><circle cx="24" cy="24" r="3.5" fill="#FFC800"/><defs><linearGradient id="gradGoldD1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FFC800" stop-opacity="0.25"/><stop offset="100%" stop-color="#D8AA35" stop-opacity="0.05"/></linearGradient></defs></svg>
                     </div>
-                    <div class="anim-object anim-sparkle-float" aria-hidden="true">
-                        <i class="fi fi-rr-sparkles"></i>
+                    <div class="brand-anim-obj brand-motif-crown" aria-hidden="true" style="top: -6%; right: -2%;">
+                        <svg width="84" height="84" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10,80 Q50,10 90,80" stroke="url(#gradCrownGold1)" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M20,85 Q50,25 80,85" stroke="#6B2D5C" stroke-width="2" stroke-dasharray="4 4" fill="none" opacity="0.7"/><path d="M30,90 Q50,40 70,90" stroke="#1B4332" stroke-width="2.5" fill="none" opacity="0.6"/><circle cx="50" cy="22" r="4" fill="#FFC800"/><circle cx="30" cy="50" r="3" fill="#C0392B"/><circle cx="70" cy="50" r="3" fill="#6B2D5C"/><defs><linearGradient id="gradCrownGold1" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#FFC800"/><stop offset="50%" stop-color="#C59419"/><stop offset="100%" stop-color="#6B2D5C"/></linearGradient></defs></svg>
+                    </div>
+                    <div class="brand-anim-obj brand-motif-chevron" aria-hidden="true" style="bottom: -4%; left: -2%;">
+                        <svg width="52" height="52" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10,18 L30,34 L50,18" stroke="#FFC800" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.9"/><path d="M10,30 L30,46 L50,30" stroke="#6B2D5C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.8"/><path d="M10,42 L30,58 L50,42" stroke="#1B4332" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.6"/></svg>
+                    </div>
+                    <div class="brand-anim-obj brand-motif-emblem" aria-hidden="true" style="bottom: 8%; right: -5%;">
+                        <svg width="58" height="58" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="35" y1="18" x2="18" y2="50" stroke="#FFC800" stroke-width="2" opacity="0.7"/><line x1="35" y1="18" x2="52" y2="50" stroke="#FFC800" stroke-width="2" opacity="0.7"/><line x1="18" y1="50" x2="52" y2="50" stroke="#FFC800" stroke-width="2" opacity="0.7"/><circle cx="35" cy="18" r="9" fill="#C0392B" opacity="0.9"/><circle cx="35" cy="18" r="4" fill="#FFFFFF"/><circle cx="18" cy="50" r="9" fill="#1B4332" stroke="#FFC800" stroke-width="1.5"/><circle cx="18" cy="50" r="4" fill="#FFC800"/><circle cx="52" cy="50" r="9" fill="#6B2D5C" opacity="0.9"/><circle cx="52" cy="50" r="4" fill="#FFFFFF"/></svg>
                     </div>
 
                     <div class="hero-image-composition">
@@ -96,7 +109,7 @@
                             <img src="images/hero_polaroid_1.jpg" alt="Compassionate Black American female therapist in a warm therapy session">
                         </div>
                         <div class="hero-img-straight">
-                            <img src="images/hero_polaroid_2.jpg" alt="Supportive Asian American and Hispanic American peer support conversation">
+                            <img src="images/hero_polaroid_2.jpg" alt="Supportive African-American male peer specialist in conversation">
                         </div>
                         <div class="hero-glass-badge anim-badge-float">
                             <div class="badge-icon-wrap"><i class="fi fi-rr-heart"></i></div>
@@ -109,8 +122,8 @@
                 </div>
 
                 <div class="hero-ref-content">
-                    <div class="hero-brand-accent" aria-hidden="true">
-                        <i class="fi fi-rr-sparkles"></i>
+                    <div class="brand-anim-obj brand-motif-diamond" aria-hidden="true" style="top: -20px; right: 0;">
+                        <svg width="36" height="36" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><polygon points="24,2 46,24 24,46 2,24" fill="url(#gradGoldD0)" stroke="#C59419" stroke-width="1.5" opacity="0.85"/><circle cx="24" cy="24" r="3.5" fill="#FFC800"/><defs><linearGradient id="gradGoldD0" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FFC800" stop-opacity="0.3"/><stop offset="100%" stop-color="#D8AA35" stop-opacity="0.05"/></linearGradient></defs></svg>
                     </div>
                     <h1 class="hero-ref-title">Change Your Mind.<br>Change Your Life.</h1>
                     <p class="hero-ref-subtitle">Priority Success Associates provides compassionate outpatient therapy and peer support services designed to help individuals and families overcome challenges and create meaningful change.</p>
@@ -169,8 +182,8 @@
                             <span class="green-dot"></span> 100% Person-Centered
                         </div>
                     </div>
-                    <div class="about-floating-leaf" aria-hidden="true">
-                        <i class="fi fi-rr-leaf"></i>
+                    <div class="brand-anim-obj brand-motif-diamond" aria-hidden="true" style="bottom: -20px; right: -15px;">
+                        <svg width="44" height="44" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><polygon points="24,2 46,24 24,46 2,24" fill="url(#gradGoldD2)" stroke="#C59419" stroke-width="1.5" opacity="0.85"/><polygon points="24,10 38,24 24,38 10,24" fill="none" stroke="#6B2D5C" stroke-width="1.5" opacity="0.9"/><circle cx="24" cy="24" r="3.5" fill="#FFC800"/><defs><linearGradient id="gradGoldD2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FFC800" stop-opacity="0.25"/><stop offset="100%" stop-color="#D8AA35" stop-opacity="0.05"/></linearGradient></defs></svg>
                     </div>
                 </div>
 
@@ -205,6 +218,12 @@
 
         <!-- SERVICES -->
         <section class="services-section" id="services" aria-label="Our Services">
+            <div class="brand-anim-obj brand-motif-crown" aria-hidden="true" style="top: 4%; right: 3%;">
+                <svg width="76" height="76" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10,80 Q50,10 90,80" stroke="url(#gradCrownGold2)" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M20,85 Q50,25 80,85" stroke="#6B2D5C" stroke-width="2" stroke-dasharray="4 4" fill="none" opacity="0.7"/><path d="M30,90 Q50,40 70,90" stroke="#1B4332" stroke-width="2.5" fill="none" opacity="0.6"/><circle cx="50" cy="22" r="4" fill="#FFC800"/><circle cx="30" cy="50" r="3" fill="#C0392B"/><circle cx="70" cy="50" r="3" fill="#6B2D5C"/><defs><linearGradient id="gradCrownGold2" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#FFC800"/><stop offset="50%" stop-color="#C59419"/><stop offset="100%" stop-color="#6B2D5C"/></linearGradient></defs></svg>
+            </div>
+            <div class="brand-anim-obj brand-motif-emblem" aria-hidden="true" style="bottom: 3%; left: 3%;">
+                <svg width="54" height="54" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="35" y1="18" x2="18" y2="50" stroke="#FFC800" stroke-width="2" opacity="0.7"/><line x1="35" y1="18" x2="52" y2="50" stroke="#FFC800" stroke-width="2" opacity="0.7"/><line x1="18" y1="50" x2="52" y2="50" stroke="#FFC800" stroke-width="2" opacity="0.7"/><circle cx="35" cy="18" r="9" fill="#C0392B" opacity="0.9"/><circle cx="35" cy="18" r="4" fill="#FFFFFF"/><circle cx="18" cy="50" r="9" fill="#1B4332" stroke="#FFC800" stroke-width="1.5"/><circle cx="18" cy="50" r="4" fill="#FFC800"/><circle cx="52" cy="50" r="9" fill="#6B2D5C" opacity="0.9"/><circle cx="52" cy="50" r="4" fill="#FFFFFF"/></svg>
+            </div>
             <div class="container">
                 <div class="section-header centered">
                     <div class="section-label">What We Offer</div>
@@ -213,7 +232,7 @@
                 </div>
                 <div class="services-grid">
                     <div class="service-card reveal-up">
-                        <div class="service-card-img"><img src="images/service_individual.jpg" alt="Asian American woman during individual therapy" loading="lazy"><div class="service-card-overlay"></div></div>
+                        <div class="service-card-img"><img src="images/service_individual.jpg" alt="African-American woman during an individual therapy session" loading="lazy"><div class="service-card-overlay"></div></div>
                         <div class="service-card-body">
                             <div class="service-icon" aria-hidden="true"><i class="fi fi-rr-user"></i></div>
                             <h3>Individual Therapy</h3>
@@ -222,7 +241,7 @@
                         </div>
                     </div>
                     <div class="service-card reveal-up">
-                        <div class="service-card-img"><img src="images/service_couples.jpg" alt="Diverse couple communicating thoughtfully in therapy" loading="lazy"><div class="service-card-overlay"></div></div>
+                        <div class="service-card-img"><img src="images/service_couples.jpg" alt="African-American couple holding hands warmly in counseling" loading="lazy"><div class="service-card-overlay"></div></div>
                         <div class="service-card-body">
                             <div class="service-icon" aria-hidden="true"><i class="fi fi-rr-heart"></i></div>
                             <h3>Couples Therapy</h3>
@@ -231,7 +250,7 @@
                         </div>
                     </div>
                     <div class="service-card reveal-up">
-                        <div class="service-card-img"><img src="images/service_family.jpg" alt="Black American family during family counseling" loading="lazy"><div class="service-card-overlay"></div></div>
+                        <div class="service-card-img"><img src="images/service_family.jpg" alt="African-American family during family counseling" loading="lazy"><div class="service-card-overlay"></div></div>
                         <div class="service-card-body">
                             <div class="service-icon" aria-hidden="true"><i class="fi fi-rr-users"></i></div>
                             <h3>Family Therapy</h3>
@@ -240,7 +259,7 @@
                         </div>
                     </div>
                     <div class="service-card reveal-up">
-                        <div class="service-card-img"><img src="images/service_youth.jpg" alt="Asian American adolescent teenager in youth therapy" loading="lazy"><div class="service-card-overlay"></div></div>
+                        <div class="service-card-img"><img src="images/service_youth.jpg" alt="African-American teenage boy smiling in youth therapy" loading="lazy"><div class="service-card-overlay"></div></div>
                         <div class="service-card-body">
                             <div class="service-icon" aria-hidden="true"><i class="fi fi-rr-smile"></i></div>
                             <h3>Youth &amp; Adolescent Therapy</h3>
@@ -249,7 +268,7 @@
                         </div>
                     </div>
                     <div class="service-card reveal-up">
-                        <div class="service-card-img"><img src="images/service_peer_support.jpg" alt="Diverse peer support group circle" loading="lazy"><div class="service-card-overlay"></div></div>
+                        <div class="service-card-img"><img src="images/service_peer_support.jpg" alt="African-American peer support specialist with a South Asian client" loading="lazy"><div class="service-card-overlay"></div></div>
                         <div class="service-card-body">
                             <div class="service-icon" aria-hidden="true"><i class="fi fi-rr-handshake"></i></div>
                             <h3>Peer Support Services</h3>
@@ -258,7 +277,7 @@
                         </div>
                     </div>
                     <div class="service-card reveal-up">
-                        <div class="service-card-img"><img src="images/service_recovery.jpg" alt="Hispanic American man smiling during recovery coaching" loading="lazy"><div class="service-card-overlay"></div></div>
+                        <div class="service-card-img"><img src="images/service_recovery.jpg" alt="African-American man smiling during recovery support meeting" loading="lazy"><div class="service-card-overlay"></div></div>
                         <div class="service-card-body">
                             <div class="service-icon" aria-hidden="true"><i class="fi fi-rr-refresh"></i></div>
                             <h3>Substance Use &amp; Recovery Support</h3>
@@ -282,6 +301,12 @@
 
         <!-- VISION -->
         <section class="vision-section" id="vision" aria-label="Our Vision">
+            <div class="brand-anim-obj brand-motif-diamond" aria-hidden="true" style="top: 8%; left: 4%;">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><polygon points="24,2 46,24 24,46 2,24" fill="url(#gradGoldD3)" stroke="#FFC800" stroke-width="1.5" opacity="0.9"/><polygon points="24,10 38,24 24,38 10,24" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.8"/><circle cx="24" cy="24" r="3.5" fill="#FFC800"/><defs><linearGradient id="gradGoldD3" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FFC800" stop-opacity="0.35"/><stop offset="100%" stop-color="#D8AA35" stop-opacity="0.1"/></linearGradient></defs></svg>
+            </div>
+            <div class="brand-anim-obj brand-motif-chevron" aria-hidden="true" style="bottom: 8%; right: 4%;">
+                <svg width="52" height="52" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10,18 L30,34 L50,18" stroke="#FFC800" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.9"/><path d="M10,30 L30,46 L50,30" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.7"/><path d="M10,42 L30,58 L50,42" stroke="#FFC800" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.6"/></svg>
+            </div>
             <div class="vision-bg-image">
                 <img src="images/vision_sunrise_hope.jpg" alt="Diverse person looking at a sunrise symbolizing hope and new growth" loading="lazy">
                 <div class="vision-overlay"></div>
@@ -302,37 +327,55 @@
         </section>
 
         <!-- WHY CHOOSE US -->
-        <section class="why-section" aria-label="Why Choose Priority Success Associates">
-            <div class="container">
+        <section class="why-section" id="why-us" aria-label="Why Choose Priority Success Associates">
+            <div class="brand-anim-obj brand-motif-crown" aria-hidden="true" style="top: 8%; left: 3%;">
+                <svg width="78" height="78" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10,80 Q50,10 90,80" stroke="url(#gradCrownGold3)" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M20,85 Q50,25 80,85" stroke="#6B2D5C" stroke-width="2" stroke-dasharray="4 4" fill="none" opacity="0.7"/><path d="M30,90 Q50,40 70,90" stroke="#1B4332" stroke-width="2.5" fill="none" opacity="0.6"/><circle cx="50" cy="22" r="4" fill="#FFC800"/><circle cx="30" cy="50" r="3" fill="#C0392B"/><circle cx="70" cy="50" r="3" fill="#6B2D5C"/><defs><linearGradient id="gradCrownGold3" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#FFC800"/><stop offset="50%" stop-color="#C59419"/><stop offset="100%" stop-color="#6B2D5C"/></linearGradient></defs></svg>
+            </div>
+            <div class="brand-anim-obj brand-motif-emblem" aria-hidden="true" style="bottom: 8%; right: 4%;">
+                <svg width="56" height="56" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="35" y1="18" x2="18" y2="50" stroke="#FFC800" stroke-width="2" opacity="0.7"/><line x1="35" y1="18" x2="52" y2="50" stroke="#FFC800" stroke-width="2" opacity="0.7"/><line x1="18" y1="50" x2="52" y2="50" stroke="#FFC800" stroke-width="2" opacity="0.7"/><circle cx="35" cy="18" r="9" fill="#C0392B" opacity="0.9"/><circle cx="35" cy="18" r="4" fill="#FFFFFF"/><circle cx="18" cy="50" r="9" fill="#1B4332" stroke="#FFC800" stroke-width="1.5"/><circle cx="18" cy="50" r="4" fill="#FFC800"/><circle cx="52" cy="50" r="9" fill="#6B2D5C" opacity="0.9"/><circle cx="52" cy="50" r="4" fill="#FFFFFF"/></svg>
+            </div>
+
+            <div class="container relative-container">
                 <div class="why-grid">
                     <div class="why-content reveal-left">
                         <div class="section-label">Why Choose Us</div>
                         <h2 class="section-title">The Priority Success <em>Difference</em></h2>
                         <p class="why-intro">We believe everyone deserves access to high-quality, compassionate care. Here is what sets us apart and makes Priority Success Associates the right choice for your journey toward meaningful change.</p>
-                        <a href="#contact" class="btn btn-green btn-md" id="why-contact-btn">Start Your Journey Today</a>
+                        
+                        <div class="why-badge-card anim-badge-float">
+                            <div class="badge-icon-wrap"><i class="fi fi-rr-shield-check"></i></div>
+                            <div class="badge-text-wrap">
+                                <strong>100% Person-Centered Care</strong>
+                                <span>Dedicated &amp; Compassionate Team</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <a href="#contact" class="btn btn-green btn-md" id="why-contact-btn">Start Your Journey Today</a>
+                        </div>
                     </div>
-                    <div class="why-features reveal-right">
-                        <div class="why-feature-item">
+                    <div class="why-features">
+                        <div class="why-feature-item reveal-up" style="--delay: 0.1s;">
                             <div class="why-icon"><i class="fi fi-rr-heart"></i></div>
                             <div><h4>Compassionate Support</h4><p>Every member of our team provides warm, judgment-free, compassionate care.</p></div>
                         </div>
-                        <div class="why-feature-item">
+                        <div class="why-feature-item reveal-up" style="--delay: 0.2s;">
                             <div class="why-icon"><i class="fi fi-rr-door-open"></i></div>
                             <div><h4>Accessible Services</h4><p>We work to reduce barriers so that quality therapy and support are within reach for everyone.</p></div>
                         </div>
-                        <div class="why-feature-item">
+                        <div class="why-feature-item reveal-up" style="--delay: 0.3s;">
                             <div class="why-icon"><i class="fi fi-rr-portrait"></i></div>
                             <div><h4>Individualized Care</h4><p>Our services are customized to your unique situation, goals, and strengths.</p></div>
                         </div>
-                        <div class="why-feature-item">
+                        <div class="why-feature-item reveal-up" style="--delay: 0.4s;">
                             <div class="why-icon"><i class="fi fi-rr-bulb"></i></div>
                             <div><h4>Practical Skills Focus</h4><p>We equip clients with real, actionable tools and coping strategies for everyday life.</p></div>
                         </div>
-                        <div class="why-feature-item">
+                        <div class="why-feature-item reveal-up" style="--delay: 0.5s;">
                             <div class="why-icon"><i class="fi fi-rr-sparkles"></i></div>
                             <div><h4>Personal Empowerment</h4><p>Our strength-based, empowerment-focused approach helps you believe in your own capacity for change.</p></div>
                         </div>
-                        <div class="why-feature-item">
+                        <div class="why-feature-item reveal-up" style="--delay: 0.6s;">
                             <div class="why-icon"><i class="fi fi-rr-home"></i></div>
                             <div><h4>Family Support</h4><p>We recognize the importance of family in healing and offer inclusive family-centered care.</p></div>
                         </div>
@@ -356,10 +399,28 @@
                     </ul>
                     <a href="#contact" class="btn btn-green btn-md" id="peer-support-btn">Learn About Peer Support</a>
                 </div>
-                <div class="alt-image reveal-right">
-                    <div class="alt-img-wrap">
-                        <img src="images/peer_support_alt.jpg" alt="Black American female peer specialist and White American client conversing warmly" loading="lazy">
-                        <div class="alt-img-stat"><div class="stat-number">Recovery</div><div class="stat-label">Is Possible &amp; We Are Here to Help</div></div>
+                <div class="alt-image-column reveal-right">
+                    <div class="brand-anim-obj brand-motif-diamond" aria-hidden="true" style="top: -8%; left: -4%;">
+                        <svg width="46" height="46" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><polygon points="24,2 46,24 24,46 2,24" fill="url(#gradGoldD4)" stroke="#C59419" stroke-width="1.5" opacity="0.85"/><polygon points="24,10 38,24 24,38 10,24" fill="none" stroke="#6B2D5C" stroke-width="1.5" opacity="0.9"/><circle cx="24" cy="24" r="3.5" fill="#FFC800"/><defs><linearGradient id="gradGoldD4" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FFC800" stop-opacity="0.25"/><stop offset="100%" stop-color="#D8AA35" stop-opacity="0.05"/></linearGradient></defs></svg>
+                    </div>
+                    <div class="brand-anim-obj brand-motif-chevron" aria-hidden="true" style="bottom: -5%; right: -3%;">
+                        <svg width="50" height="50" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10,18 L30,34 L50,18" stroke="#FFC800" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.9"/><path d="M10,30 L30,46 L50,30" stroke="#6B2D5C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.8"/><path d="M10,42 L30,58 L50,42" stroke="#1B4332" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.6"/></svg>
+                    </div>
+
+                    <div class="alt-image-composition">
+                        <div class="alt-img-tilted">
+                            <img src="images/peer_support.jpg" alt="Peer support specialists interacting warmly in recovery support session">
+                        </div>
+                        <div class="alt-img-straight">
+                            <img src="images/peer_support_alt.jpg" alt="Black American female peer specialist and White American client conversing warmly" loading="lazy">
+                        </div>
+                        <div class="alt-glass-badge anim-badge-float">
+                            <div class="badge-icon-wrap"><i class="fi fi-rr-handshake"></i></div>
+                            <div class="badge-text-wrap">
+                                <strong>Recovery</strong>
+                                <span>Is Possible &amp; We Are Here to Help</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -389,6 +450,12 @@
 
         <!-- TESTIMONIALS -->
         <section class="testimonials-section" id="testimonials" aria-label="Client testimonials">
+            <div class="brand-anim-obj brand-motif-crown" aria-hidden="true" style="top: 6%; right: 3%;">
+                <svg width="74" height="74" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10,80 Q50,10 90,80" stroke="url(#gradCrownGold4)" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M20,85 Q50,25 80,85" stroke="#6B2D5C" stroke-width="2" stroke-dasharray="4 4" fill="none" opacity="0.7"/><path d="M30,90 Q50,40 70,90" stroke="#1B4332" stroke-width="2.5" fill="none" opacity="0.6"/><circle cx="50" cy="22" r="4" fill="#FFC800"/><circle cx="30" cy="50" r="3" fill="#C0392B"/><circle cx="70" cy="50" r="3" fill="#6B2D5C"/><defs><linearGradient id="gradCrownGold4" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#FFC800"/><stop offset="50%" stop-color="#C59419"/><stop offset="100%" stop-color="#6B2D5C"/></linearGradient></defs></svg>
+            </div>
+            <div class="brand-anim-obj brand-motif-diamond" aria-hidden="true" style="bottom: 5%; left: 3%;">
+                <svg width="46" height="46" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><polygon points="24,2 46,24 24,46 2,24" fill="url(#gradGoldD5)" stroke="#C59419" stroke-width="1.5" opacity="0.85"/><polygon points="24,10 38,24 24,38 10,24" fill="none" stroke="#6B2D5C" stroke-width="1.5" opacity="0.9"/><circle cx="24" cy="24" r="3.5" fill="#FFC800"/><defs><linearGradient id="gradGoldD5" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FFC800" stop-opacity="0.25"/><stop offset="100%" stop-color="#D8AA35" stop-opacity="0.05"/></linearGradient></defs></svg>
+            </div>
             <div class="container">
                 <div class="section-header centered">
                     <div class="section-label">What Clients Say</div>
@@ -433,6 +500,12 @@
 
         <!-- CONTACT -->
         <section class="contact-section" id="contact" aria-label="Contact us and get started">
+            <div class="brand-anim-obj brand-motif-emblem" aria-hidden="true" style="top: 8%; left: 3%;">
+                <svg width="54" height="54" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="35" y1="18" x2="18" y2="50" stroke="#FFC800" stroke-width="2" opacity="0.7"/><line x1="35" y1="18" x2="52" y2="50" stroke="#FFC800" stroke-width="2" opacity="0.7"/><line x1="18" y1="50" x2="52" y2="50" stroke="#FFC800" stroke-width="2" opacity="0.7"/><circle cx="35" cy="18" r="9" fill="#C0392B" opacity="0.9"/><circle cx="35" cy="18" r="4" fill="#FFFFFF"/><circle cx="18" cy="50" r="9" fill="#1B4332" stroke="#FFC800" stroke-width="1.5"/><circle cx="18" cy="50" r="4" fill="#FFC800"/><circle cx="52" cy="50" r="9" fill="#6B2D5C" opacity="0.9"/><circle cx="52" cy="50" r="4" fill="#FFFFFF"/></svg>
+            </div>
+            <div class="brand-anim-obj brand-motif-chevron" aria-hidden="true" style="bottom: 6%; right: 3%;">
+                <svg width="50" height="50" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10,18 L30,34 L50,18" stroke="#FFC800" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.9"/><path d="M10,30 L30,46 L50,30" stroke="#6B2D5C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.8"/><path d="M10,42 L30,58 L50,42" stroke="#1B4332" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.6"/></svg>
+            </div>
             <div class="container contact-grid">
                 <div class="contact-info reveal-left">
                     <div class="section-label">Get In Touch</div>
@@ -499,20 +572,21 @@
         <div class="footer-top">
             <div class="container footer-top-grid">
                 <div class="footer-brand">
-                    <div class="footer-logo">
-                        <div class="logo-icon"><i class="fi fi-rr-leaf"></i></div>
-                        <div class="footer-logo-text"><span class="logo-name">Priority Success</span><span class="logo-sub">Associates</span></div>
-                    </div>
-                    <p class="footer-tagline">Change Your Mind. Change Your Life.</p>
-                    <p class="footer-desc">Compassionate outpatient therapy and peer support services empowering individuals and families in Charlotte, NC to create meaningful, lasting change.</p>
-                    <div class="footer-social" aria-label="Social media links">
-                        <a href="#" class="social-link" aria-label="Facebook" id="footer-facebook"><i class="fi fi-brands-facebook"></i></a>
-                        <a href="#" class="social-link" aria-label="Instagram" id="footer-instagram"><i class="fi fi-brands-instagram"></i></a>
-                        <a href="#" class="social-link" aria-label="LinkedIn" id="footer-linkedin"><i class="fi fi-brands-linkedin"></i></a>
+                    <div class="footer-logo-card">
+                        <a href="#" class="footer-logo-card-wrap" aria-label="Priority Success Associates Home">
+                            <img src="images/Logo.png" alt="Priority Success Associates Logo" class="footer-logo-img">
+                        </a>
+                        <p class="footer-tagline">Change Your Mind. Change Your Life.</p>
+                        <p class="footer-desc">Compassionate outpatient therapy and peer support services empowering individuals and families in Charlotte, NC to create meaningful, lasting change.</p>
+                        <div class="footer-social" aria-label="Social media links">
+                            <a href="#" class="social-link" aria-label="Facebook" id="footer-facebook"><i class="fi fi-brands-facebook"></i></a>
+                            <a href="#" class="social-link" aria-label="Instagram" id="footer-instagram"><i class="fi fi-brands-instagram"></i></a>
+                            <a href="#" class="social-link" aria-label="LinkedIn" id="footer-linkedin"><i class="fi fi-brands-linkedin"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="footer-col">
-                    <h4 class="footer-col-title">Navigation</h4>
+                    <h4 class="footer-col-title">NAVIGATION</h4>
                     <ul class="footer-links">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About Us</a></li>
@@ -523,7 +597,7 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4 class="footer-col-title">Our Services</h4>
+                    <h4 class="footer-col-title">OUR SERVICES</h4>
                     <ul class="footer-links">
                         <li><a href="#services">Outpatient Therapy</a></li>
                         <li><a href="#services">Individual Therapy</a></li>
@@ -535,11 +609,14 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4 class="footer-col-title">Contact Us</h4>
-                    <address class="footer-contact" style="font-style: normal;">
+                    <h4 class="footer-col-title">CONTACT US</h4>
+                    <address class="footer-contact">
                         <div class="footer-contact-item">
                             <i class="fi fi-rr-phone-call"></i>
-                            <div><a href="tel:7043221178">704-322-1178</a><br><a href="tel:9804512344">980-451-2344</a></div>
+                            <a href="tel:7043221178">704-322-1178</a>
+                        </div>
+                        <div class="footer-contact-item footer-contact-phone-alt">
+                            <a href="tel:9804512344">980-451-2344</a>
                         </div>
                         <div class="footer-contact-item">
                             <i class="fi fi-rr-envelope"></i>
@@ -550,13 +627,13 @@
                             <span>2442 Elendil Lane<br>Charlotte, NC 28269</span>
                         </div>
                     </address>
-                    <a href="#contact" class="btn btn-gold btn-sm footer-cta" id="footer-schedule-btn">Schedule Appointment</a>
+                    <a href="#contact" class="btn-gold-pill footer-cta" id="footer-schedule-btn">SCHEDULE APPOINTMENT</a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
             <div class="container footer-bottom-inner">
-                <p>&copy; <span id="current-year"></span> Priority Success Associates. All Rights Reserved.</p>
+                <p>&copy; <span id="current-year">2026</span> Priority Success Associates. All Rights Reserved.</p>
                 <div class="footer-bottom-links">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Service</a>
